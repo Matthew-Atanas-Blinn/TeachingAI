@@ -1,0 +1,20 @@
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Student records and grading data must never be committed
+student_data/
+grades/
+results/
