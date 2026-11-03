@@ -63,24 +63,19 @@ Use consistent treatments for:
 
 A reference deck may add styling only after its readability, accessibility, and component consistency are checked.
 
-## Code and explanation correspondence
+## Slide-specific visual correspondence
 
-When bullets, callouts, or narration discuss parts of code, the styling must make the relationship visible.
+Use the semantic mapping established during artifact planning to make each explanation-to-target relationship visible at presentation scale.
 
-Example categories for:
+For code slides:
 
-```cpp
-int x = 5;
-char y = 'A';
-```
+- highlight only the tokens or regions currently being explained;
+- keep unrelated syntax neutral enough that it does not compete;
+- position descriptors near their corresponding code when practical;
+- use lines, labels, grouping, or staged reveals when proximity alone is insufficient; and
+- verify the relationship in presentation view rather than relying on edit-view zoom.
 
-- `Types` corresponds to `int` and `char`.
-- `Variables` corresponds to `x` and `y`.
-- `Values` corresponds to `5` and `'A'`.
-
-Use matching visual families between explanatory points and the relevant code. Exact shades may differ because the bullet area and code panel have different backgrounds. The relationship must remain obvious. Add a non-color cue when the mapping is essential.
-
-Do not color unrelated syntax in ways that compete with the teaching categories. If ordinary syntax highlighting conflicts with instructional highlighting, simplify it.
+When a descriptor and code token use background-specific variants of one semantic family, preserve enough hue and treatment similarity that students can recognize the pair immediately.
 
 ## Code panel styling
 
@@ -111,7 +106,7 @@ Do not color unrelated syntax in ways that compete with the teaching categories.
 
 ## Accessibility and projection
 
-Follow `REQUIRED/accessibility.md`. In particular:
+Universal accessibility requirements remain active. In particular:
 
 - do not rely on color alone;
 - tune colors for their local backgrounds;

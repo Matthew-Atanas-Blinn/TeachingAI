@@ -84,3 +84,25 @@ This applies even when Matthew explicitly asks for the modification. Approval to
 - Major version: incompatible governance or hierarchy change.
 
 `TODO`: Decide whether to maintain a machine-readable version file after the repository begins using automated tooling.
+
+## Hierarchical index update procedure
+
+For every added, moved, renamed, or deleted file or folder:
+
+1. identify the nearest governing `INDEX.md`;
+2. update that index if its immediate child set or routing description changed;
+3. do not propagate descendant listings into ancestor indexes;
+4. create an `INDEX.md` inside every new folder, even if it initially instructs the reader to inspect all folder contents; and
+5. verify that no lower-level file was given a defensive backward pointer into the rules or decisions hierarchy.
+
+During validation:
+
+- verify that every non-`.git` repository folder contains `INDEX.md`;
+- verify that every path named by an index exists;
+- verify that each immediate child requiring routing appears in the nearest index;
+- verify that indexes do not recursively catalog content owned by lower indexes;
+- verify that loading instructions do not create cycles;
+- verify that global standards are selected before artifact-specific standards; and
+- verify that applicability triggers are specific enough to avoid unrelated context loading.
+
+Navigation guidance belongs in the nearest applicable `INDEX.md`. Substantive rules do not belong in indexes.

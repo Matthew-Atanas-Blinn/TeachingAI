@@ -36,6 +36,14 @@ Use this checklist on the final rendered deck. The AI should perform and report 
 - [ ] C++ string literals use escaped newlines or `std::endl`, not accidental literal line breaks.
 - [ ] Examples do not depend on an unmentioned compiler extension or undefined behavior.
 
+## C2. Slide-specific visual correspondence
+
+- [ ] Every explanatory label is spatially associated with the intended token or region.
+- [ ] Staged reveals preserve the mapping after each reveal.
+- [ ] Projected-size viewing makes each mapped pair easy to locate.
+- [ ] Line numbers appear only when narration or an activity uses them.
+- [ ] Unrelated syntax does not compete with the instructional target.
+
 ## D. Diagrams and visuals
 
 - [ ] Each visual has a clear instructional role.
