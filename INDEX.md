@@ -1,4 +1,4 @@
-# TeachingAI Repository v1.2.0
+# TeachingAI Repository v1.3.0
 
 ## Purpose
 

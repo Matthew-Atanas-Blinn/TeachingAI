@@ -73,6 +73,7 @@ Report consequential overrides and preserve recurring alternatives in `PROPOSED/
 ## Consequences
 
 - Quiz standards use the five categories and default order.
+- For D2L quizzes, progression is normally preserved through question order rather than imported sections or full question randomization.
 - Module source-of-truth documents should identify which stages are appropriate.
 - Reviews should verify that category labels match actual cognitive demand.
 

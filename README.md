@@ -140,7 +140,7 @@ See `REQUIRED/data_privacy.md`.
 TeachingAI is an evolving framework developed through practical use in
 college-level computer science instruction.
 
-Version 1.2.0 includes standards for:
+Version 1.3.0 includes standards for:
 
 - slide generation and review;
 - quiz generation and review;
@@ -216,4 +216,4 @@ Under the following terms:
 See the LICENSE file for details.
 ## Hierarchical context routing
 
-Version 1.2.0 uses `INDEX.md` files at every folder level. Start with the root index, then follow only the branches relevant to the task. Cross-artifact operational rules live in `STANDARDS/global/`; artifact branches add specialized generation and review requirements. Indexes route through immediate children rather than duplicating the full repository tree.
+Version 1.3.0 uses `INDEX.md` files at every folder level. Start with the root index, then follow only the branches relevant to the task. Cross-artifact operational rules live in `STANDARDS/global/`; artifact branches add specialized generation and review requirements. Indexes route through immediate children rather than duplicating the full repository tree.

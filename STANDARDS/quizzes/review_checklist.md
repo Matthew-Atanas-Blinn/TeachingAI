@@ -18,7 +18,9 @@
 
 - [ ] Questions follow Foundation -> Tracing -> Application -> Integration -> Design/Diagnosis unless a documented reason says otherwise.
 - [ ] Instructor titles follow `<Category>: <Concept>`.
-- [ ] Difficulty labels match actual cognitive demand.
+- [ ] Titles concisely and accurately identify the assessed concept for future revision.
+- [ ] Titles avoid opaque sequence-only labels unless a documented workflow requires them.
+- [ ] Difficulty labels match actual cognitive demand and the category-to-difficulty mapping.
 - [ ] Question order has not been randomized when dependencies or progression matter.
 - [ ] Category counts approximately match the intended distribution.
 
@@ -58,6 +60,9 @@
 - [ ] Special characters, quotes, commas, and newlines are correctly escaped.
 - [ ] A test import or structural validation was performed when practical.
 - [ ] Questions appear in the intended order after import.
+- [ ] D2L CSV is used by default, or the concrete need for another format is documented and validated.
+- [ ] Instructor-only titles remain hidden in the active student quiz view when that behavior is relied upon.
+- [ ] No section, pool, or package complexity was added without a specific instructional or operational benefit.
 
 ## G. Final report
 

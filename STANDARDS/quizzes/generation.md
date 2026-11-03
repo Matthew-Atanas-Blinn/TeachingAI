@@ -34,7 +34,9 @@ Instructor-only question titles should use:
 <Category>: <Concept>
 ```
 
-Examples: `Tracing: Reference aliasing`, `Diagnosis: Destructor behavior`.
+Examples: `Tracing: Reference Aliasing`, `Diagnosis: Destructor Behavior`.
+
+Titles should be concise, descriptive, and useful for future revision. They should identify the assessed concept rather than use opaque sequence-only labels such as `F01`, `T03`, or `Q12`. Keep the category visible while using the remaining title space for an accurate concept label.
 
 ## Default type distribution
 
@@ -72,10 +74,13 @@ Scale proportionally for shorter quizzes. This is a default, not a requirement w
 
 ## D2L defaults
 
-- Prefer D2L CSV import unless package-specific features are required.
-- Keep questions in pedagogical order.
+- Prefer D2L CSV import unless a required feature cannot be represented reliably in CSV.
+- Import directly into the target quiz when Question Library reuse is not needed.
+- Keep questions in pedagogical order; do not depend on imported sections to preserve progression.
 - Do not enable question randomization by default.
-- Use instructor-only category titles.
+- Use concise instructor-only titles in the format `<Category>: <Concept>`.
+- Populate D2L Difficulty 1-5 according to the five pedagogical categories.
+- Use Blackboard/IMS QTI-style packages, sections, pools, or manual grouping only for a concrete feature need and only after validating the workflow in the active D2L environment.
 - Verify import structure against a known-working example when format details matter.
 
 ## Key verification

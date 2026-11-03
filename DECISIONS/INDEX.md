@@ -5,6 +5,7 @@ Decision records preserve rationale for consequential accepted choices. Load a d
 ## Decision records
 
 - `pedagogical_progression.md`: cross-course pedagogical progression.
+- `quiz_import_and_metadata.md`: D2L quiz import, title, difficulty, ordering, and randomization convention.
 - `repository_licensing.md`: repository licensing choice.
 - `cpp_namespace_convention.md`: cross-course namespace convention for instructional C++.
 - `semantic_visual_mapping.md`: cross-course semantic mapping across dark and light backgrounds.

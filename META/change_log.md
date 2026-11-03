@@ -2,6 +2,25 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+## 1.3.0 - 2026-11-03
+
+### Added
+
+- Added an accepted cross-course decision for D2L quiz import format, instructor-facing metadata, fixed pedagogical ordering, and randomization defaults.
+
+### Changed
+
+- Standardized D2L CSV as the default quiz import format unless a required feature needs another validated method.
+- Clarified that instructor-only titles use `<Category>: <Concept>` and should be concise, descriptive, and useful for future revision rather than opaque sequence codes.
+- Required D2L Difficulty 1-5 to match Foundation through Design/Diagnosis.
+- Clarified that pedagogical progression is normally preserved through question order rather than imported sections or full question randomization.
+- Added review checks for title quality, student-view visibility, format exceptions, and unnecessary section/package complexity.
+
+### Assumptions and TODOs
+
+- Revalidate title visibility and CSV behavior if the D2L interface or institutional configuration changes.
+- Reconsider package imports only when a concrete unsupported feature justifies the additional complexity.
+
 ## 1.2.0 - 2026-11-02
 
 ### Added
