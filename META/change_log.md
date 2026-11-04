@@ -2,6 +2,39 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+### 1.4.0 - 2026-11-04
+
+#### Added
+
+- Added the approved Programming Fundamentals I user-defined-functions module.
+- Added module-specific source-of-truth, review-checklist, local-decision, and routing files.
+- Added repository output verification requirements to `META/update_process.md`.
+- Added explicit D2L HTML code-panel generation and validation requirements.
+
+#### Changed
+
+- Registered the functions module in the Programming Fundamentals I module index.
+- Updated the Programming Fundamentals I course context with the approved module and its quiz emphasis.
+- Updated current repository version declarations to 1.4.0.
+- Strengthened quiz formatting requirements so code is visually separated from ordinary text in question stems and answer choices.
+- Required D2L quiz CSV generation to use the established HTML representation with the corresponding `HTML` format field.
+- Required repository completion reports to be verified against Git's actual changed-file inventory.
+- Required archive contents to be extracted and checked against the approved change report before delivery.
+
+#### Corrected
+
+- Corrected the root `INDEX.md` version heading to identify the current repository as version 1.4.0.
+- Corrected the repository process so a file cannot be reported as modified unless the final Git inventory or packaged output contains that modification.
+- Corrected the Chapter 6 quiz formatting approach by replacing unsupported Markdown code fences with D2L-compatible HTML code panels.
+- Clarified that structural CSV validation alone does not establish correct student-visible rendering.
+
+#### Assumptions and TODOs
+
+- The Chapter 6 slide deck and D2L quiz CSV remain generated artifacts outside the repository.
+- The current Chapter 6 deck predates the newer light-code-panel default and does not require immediate modification.
+- The Chapter 6 quiz must be test-imported into D2L before student release.
+- Assignment alignment should be reviewed when the corresponding functions programming assignment is revised.
+
 ## 1.3.0 - 2026-11-03
 
 ### Added

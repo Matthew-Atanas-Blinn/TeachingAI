@@ -51,18 +51,34 @@
 - [ ] Correct-answer positions do not form an obvious sequence or block pattern, including all/nearly all one letter, long runs, repeated cycles such as A-B-C-D, blocks such as questions 1-10 = A and 11-20 = B, or a strong concentration in one position.
 - [ ] Changing answer positions has not altered the keyed answer or broken grammatical consistency.
 - [ ] Answer-position balancing did not take priority over correctness or distractor quality.
+- [ ] The correct answer is not uniquely signaled by a comment, label, explanatory annotation, extra specificity, unusual length, or different formatting.
+- [ ] Comments or annotations are removed unless they are necessary to the assessed concept and applied without revealing the key.
 
 ## F. Formatting and D2L
 
-- [ ] Code indentation and line breaks survive the selected import format.
-- [ ] Question titles are instructor-only where intended.
-- [ ] Point values and answer indicators are valid.
-- [ ] Special characters, quotes, commas, and newlines are correctly escaped.
-- [ ] A test import or structural validation was performed when practical.
+- [ ] Every code-related occurrence was classified from local meaning as ordinary prose, inline code, or block code.
+- [ ] Ordinary English words are not styled merely because they match code words used elsewhere.
+- [ ] Complete statements, declarations, parallel code alternatives, function definitions, and multi-line fragments use block panels.
+- [ ] Short code embedded in prose uses inline styling.
+- [ ] Each meaningful expression, declaration, parameter, or state description remains contiguous within one inline span.
+- [ ] Identifiers referenced in prose immediately before or after a code block use inline code styling consistently.
+- [ ] Mixed stems were checked in both places: the prose lead-in and the code block.
+- [ ] Every stem expected to contain code was verified to contain a block panel; validation did not inspect only already-formatted stems.
+- [ ] Every answer choice was checked individually when any option contains code.
+- [ ] Parallel code choices use parallel formatting, including malformed code distractors.
+- [ ] Function definitions use conventional line breaks and indentation rather than one-line compression.
+- [ ] D2L CSV uses HTML formatting rather than Markdown fences.
+- [ ] Every formatted `QuestionText` and `Option` record contains the required `HTML` format field.
+- [ ] HTML-sensitive C++ characters and CSV quotation marks are escaped correctly.
+- [ ] Block panels preserve indentation and line breaks with `white-space: pre-wrap`.
+- [ ] Inline code remains inline and does not expand to the full line.
+- [ ] No raw Markdown fence characters are visible in the imported student view.
+- [ ] Structural validation checked question count, key count, IDs, points, difficulty, ordering, and HTML markers.
+- [ ] Semantic validation reviewed every stem and option, not only aggregate counts or regex matches.
+- [ ] A known-working D2L CSV was used as the structural reference.
+- [ ] A test import or representative student-view inspection was performed when practical.
+- [ ] Question titles remain instructor-only where intended.
 - [ ] Questions appear in the intended order after import.
-- [ ] D2L CSV is used by default, or the concrete need for another format is documented and validated.
-- [ ] Instructor-only titles remain hidden in the active student quiz view when that behavior is relied upon.
-- [ ] No section, pool, or package complexity was added without a specific instructional or operational benefit.
 
 ## G. Final report
 

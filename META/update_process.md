@@ -34,6 +34,154 @@ Turn useful discoveries into durable improvements without silently destabilizing
 12. **Validate.** Check paths, links, contradictions, privacy, and whether the change is specific enough to guide action.
 13. **Record.** Add an entry to `change_log.md`; add or update a decision record when the rationale is consequential.
 
+## Repository output verification gate
+
+Before reporting that a repository update is complete, verify the actual output against the approved change set. Intended changes are not evidence that the final files contain those changes.
+
+### 1. Inspect the final changed-file inventory
+
+Run the following commands from the repository root:
+
+    git status --short
+    git diff --name-status
+    git diff --check
+
+If changes have already been staged, also run:
+
+    git diff --cached --name-status
+    git diff --cached --check
+
+Compare the resulting inventory against the approved Repository Change Report.
+
+### 2. Verify every expected modification
+
+For every file listed as modified in the approved report:
+
+- confirm that the file appears in `git status --short`, `git diff --name-status`, or `git diff --cached --name-status`;
+- inspect the relevant diff;
+- confirm that the intended content is present;
+- confirm that no required section was omitted; and
+- do not report the file as modified if the actual working tree contains no modification.
+
+A generation script that attempted to modify a file does not prove that the resulting file differs from the repository version.
+
+### 3. Verify every expected addition
+
+For every added folder or file:
+
+- confirm that the path exists;
+- confirm that each new folder contains its required `INDEX.md`;
+- confirm that the nearest owning index routes to the new content;
+- confirm that the addition appears as untracked or staged before commit; and
+- inspect the complete contents of each added file.
+
+### 4. Verify required metadata updates
+
+When a repository version changes, inspect every current-version authority individually.
+
+At minimum, verify:
+
+- the version heading in the root `INDEX.md`;
+- the current-version statement in `README.md`;
+- the corresponding entry in `META/change_log.md`; and
+- any machine-readable version file if one is later adopted.
+
+Do not rely on replacing only one occurrence of the previous version. Search for all current-version declarations and distinguish them from legitimate historical references.
+
+Suggested checks:
+
+    grep -RniE 'TeachingAI Repository v[0-9]+\.[0-9]+\.[0-9]+|Version [0-9]+\.[0-9]+\.[0-9]+' \
+        INDEX.md README.md META
+
+Historical references to earlier versions should remain unchanged when they describe earlier repository behavior.
+
+### 5. Verify the change log
+
+Confirm that `META/change_log.md` contains the approved entry.
+
+Then confirm that the file appears in the changed-file inventory if the entry is newly added or revised.
+
+Use:
+
+    git diff -- META/change_log.md
+    git diff --cached -- META/change_log.md
+
+If the file does not appear in Git's inventory, do not claim that the change log was modified.
+
+### 6. Validate format-specific reference artifacts
+
+When a generated artifact depends on an import format, inspect a previously imported artifact that is known to work before generating the new artifact.
+
+For a D2L quiz CSV containing code:
+
+- use an approved, successfully imported D2L CSV as the structural reference;
+- do not substitute Markdown syntax for HTML merely because both can visually represent code elsewhere;
+- store formatted HTML in the question or option text field;
+- place `HTML` in the format field required by the D2L CSV record;
+- escape HTML-sensitive code characters;
+- preserve indentation with `white-space: pre-wrap`;
+- verify question stems and answer choices separately; and
+- perform a test import when practical.
+
+A structurally valid CSV is not sufficient if D2L renders formatting syntax as literal student-visible text.
+
+### 7. Validate D2L HTML code blocks
+
+Use this established structure for a question containing a code block:
+
+    QuestionText,"<p>Question text</p><div style=""font-family: Consolas, &quot;Courier New&quot;, monospace; white-space: pre-wrap; background-color: #f5f5f5; border: 1px solid #cccccc; padding: 10px; margin-top: 8px;"">int value = 11;
+    int* p = &amp;value;
+    p = nullptr;</div>",HTML
+
+Use the same styled `<div>` structure for an answer choice that consists of code:
+
+    Option,100,"<div style=""font-family: Consolas, &quot;Courier New&quot;, monospace; white-space: pre-wrap; background-color: #f5f5f5; border: 1px solid #cccccc; padding: 10px; margin-top: 8px;"">double area(double length, double width);</div>",HTML
+
+At minimum, escape:
+
+- `&` as `&amp;`;
+- `<` as `&lt;`;
+- `>` as `&gt;`; and
+- embedded HTML attribute quotation marks according to CSV quoting rules.
+
+Do not use Markdown triple-backtick fences in a D2L CSV unless a verified import test demonstrates that D2L renders them rather than displaying them literally.
+
+### 8. Inspect the packaged output
+
+If the repository is delivered as an archive:
+
+- list the archive contents;
+- verify that all expected files are present;
+- extract the archive into a temporary directory;
+- compare the extracted files against the approved change list;
+- verify that the archive contains no unintended temporary or duplicate files; and
+- run the repository validation checks against the extracted copy.
+
+### 9. Check for omissions and unexpected changes
+
+Treat either of the following as a failed validation:
+
+- an approved change is absent from the final output; or
+- an unreported file is added, modified, moved, renamed, or deleted.
+
+Resolve the discrepancy before reporting completion.
+
+### 10. Report only the verified result
+
+The final Repository Change Report must reflect the actual changed-file inventory, not the intended inventory or a script's planned operations.
+
+A repository update is not complete until the following agree:
+
+- the approved change plan;
+- the final file contents;
+- `git status --short`;
+- `git diff --name-status`;
+- `git diff --check`;
+- the repository version declarations;
+- `META/change_log.md`;
+- the packaged output, when applicable; and
+- the final Repository Change Report.
+
 ## Expedited artifact-repair mode
 
 Matthew may explicitly invoke expedited handling when a deliverable is time-sensitive. In expedited mode:

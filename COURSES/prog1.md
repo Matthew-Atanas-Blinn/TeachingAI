@@ -40,4 +40,4 @@ Students complete substantial programming assignments, so quizzes may emphasize 
 - Add approved semester sequence.
 - Add course-wide naming and style conventions.
 - Add durable policies for calculators, collaboration, and AI use if needed.
-- Add links to completed module source-of-truth folders.
+- Continue adding approved module source-of-truth folders as redesigns are completed.

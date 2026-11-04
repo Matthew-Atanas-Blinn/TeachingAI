@@ -66,11 +66,40 @@ Scale proportionally for shorter quizzes. This is a default, not a requirement w
 
 ## Code formatting
 
-- Preserve indentation and monospaced presentation.
-- For D2L CSV, use the proven formatting supported by the current import method. Do not assume arbitrary HTML will render correctly.
-- Ensure line breaks survive import.
+- Visually distinguish code from pedagogical prose by using block code panels or inline code styling only when the text represents source code, a code token, a complete code expression, or a literal program-state expression.
+- Do not style an ordinary English word merely because it matches a C++ keyword, identifier, or variable name used elsewhere. Classify each occurrence from its local instructional meaning.
+- Use a block code panel for complete statements, declarations compared as alternatives, function definitions, and multi-line fragments.
+- Use inline code for short code embedded within prose, including identifiers, types, calls, expressions, and compact state descriptions.
+- Keep each meaningful expression or declaration contiguous within one inline span. For example, format `score + 1`, `int score`, and `x = 3, y = 9` as whole units rather than styling only selected tokens.
+- When prose directly refers to identifiers shown in an accompanying code block, format those identifier references inline as code, such as the `x` and `y` in "What are x and y after the call?"
+- When an answer set contains parallel code alternatives, give all alternatives the same treatment, including malformed code intended as a distractor.
+- Format function definitions with conventional line breaks and indentation. Do not compress the signature, braces, and body onto one line for introductory students.
+- Do not include comments, labels, naming hints, or explanatory annotations in only the correct answer when that information reveals or disproportionately signals the key. If comments are the concept being assessed, apply them symmetrically or make that purpose explicit.
+- For D2L CSV imports, store HTML in the `QuestionText` or `Option` field and place `HTML` in the corresponding format field. Do not use Markdown fences.
+- Block code must use a styled `<div>` with a monospaced font, `white-space: pre-wrap`, a light-neutral background, visible border, and sufficient padding.
+- Inline code must use a styled `<span>` with a monospaced font and a subtle light-neutral background or border. Inline code must not expand to the full line.
+- Use one consistent block style and one consistent inline style throughout a quiz.
+- Escape HTML-sensitive C++ characters before embedding code and preserve valid CSV quoting.
 - Keep code readable without horizontal scrolling.
 - Do not place literal unescaped newlines inside C++ string literals.
+
+### Code-format validation
+
+Validate formatting by meaning and by answer-set consistency, not by keyword matching or aggregate HTML counts:
+
+- inventory every stem and answer choice containing source code, code tokens, expressions, or program-state notation;
+- inspect both parts of mixed question stems separately: the prose lead-in and the accompanying code block;
+- verify every stem expected to contain code actually contains a block panel, rather than checking only stems already detected as formatted;
+- classify each occurrence as ordinary prose, inline code, or block code in its local context;
+- inspect all four answer choices whenever any choice contains code;
+- verify that contiguous expressions remain in one inline span;
+- verify that prose is not styled merely because it shares a word with code;
+- verify that parallel alternatives receive parallel formatting, including invalid distractors;
+- verify function definitions use readable line breaks and indentation;
+- compare the correct answer with distractors for comments, labels, wording, specificity, length, formatting, or annotations that leak the key;
+- confirm every formatted record carries the `HTML` marker;
+- confirm no Markdown fences remain; and
+- test-import representative block, inline, expression, escaped-operator, and code-choice records when practical.
 
 ## D2L defaults
 
