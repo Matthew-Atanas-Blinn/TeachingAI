@@ -9,7 +9,9 @@ Accessibility is a design constraint, not a final cosmetic pass. Materials shoul
 - Do not communicate essential meaning through color alone. Pair color with labels, position, outlines, emphasis, symbols, or wording.
 - Maintain readable contrast between text and its immediate background.
 - Do not assume that colors that look distinct on one monitor will remain distinct on a classroom projector.
-- Use legible font sizes and avoid dense text or code that requires students to read fine detail at a distance.
+- Use legible font sizes and avoid dense text or code that requires students to read fine detail at a distance. For projected instructional slides, use 18 pt as the normal minimum for supporting text and code, while titles should be substantially larger. Smaller text is reserved for non-instructional metadata or a documented approved exception.
+- Verify color contrast on every local background. Target WCAG 2.2 AA contrast: at least 4.5:1 for normal text and 3:1 for large text (at least 18 pt regular or 14 pt bold).
+- Do not depend on color alone. Pair semantic color with position, labels, borders, weight, or other non-color cues. Avoid underlining code for semantic emphasis because it can be confused with underscores and adds visual clutter; prefer bold weight, nearby labels, matching borders, or restrained background emphasis.
 - Use descriptive headings, logical reading order, and meaningful alternative text where the format supports it.
 - Avoid unnecessary motion, flashing, and transitions that interfere with comprehension.
 - Preserve visible keyboard focus and semantic structure in interactive materials.

@@ -47,6 +47,7 @@ Use this checklist on the final rendered deck. The AI should perform and report 
 ## D. Diagrams and visuals
 
 - [ ] Each visual has a clear instructional role.
+- [ ] The title slide includes a polished topic-representative hero visual when established course decks use that convention.
 - [ ] Arrows point to the intended object and do not cross ambiguously.
 - [ ] Labels match both the graphical element and the narration.
 - [ ] Data-structure state and transitions are technically correct.
@@ -63,6 +64,8 @@ Use this checklist on the final rendered deck. The AI should perform and report 
 - [ ] Text density is reasonable.
 - [ ] Titles, body text, labels, and code use consistent sizing and alignment.
 - [ ] The slide remains readable in presentation view, not merely when zoomed in for editing.
+- [ ] Ordinary supporting text and instructional code are normally at least 18 pt; any smaller text is non-instructional or is justified by an approved readable reference.
+- [ ] No slide solves density by shrinking instructional text; dense material is simplified or split.
 
 ## F. Accessibility and projection
 

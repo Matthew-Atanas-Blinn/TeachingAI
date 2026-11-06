@@ -81,6 +81,7 @@ When a descriptor and code token use background-specific variants of one semanti
 
 - Default to a light-gray or light neutral panel with dark base text.
 - Use a monospaced font and sizes readable from the back of a classroom.
+- Treat legibility as a rendered-slide requirement, not merely absence of overflow. Avoid shrinking labels, answer choices, code, or supporting text to fit. As a working classroom target, keep ordinary supporting text at 18 pt or larger and code at 18 pt or larger; use smaller text only for non-instructional metadata or when an approved reference deck demonstrates equivalent readability. If content does not fit, simplify or split the slide before reducing below that target.
 - Avoid horizontal scrolling, excessive line length, tiny text, or code that is too large for the slide.
 - Show only enough surrounding code to understand the target concept.
 - Use line numbers only when the narration or activity refers to them.
@@ -89,6 +90,7 @@ When a descriptor and code token use background-specific variants of one semanti
 ## Visuals and diagrams
 
 - Every visual must support a stated instructional purpose.
+- Title slides should normally include one polished, topic-representative hero visual when that convention is established by the course's approved decks. The hero should create curiosity and preview the central mental model without competing with the title.
 - Labels, arrows, highlights, and narration must refer to the correct objects.
 - Preserve spatial logic. Processes should flow consistently; data-structure diagrams should accurately show ownership, links, indices, and state.
 - Avoid decorative complexity and invented details.

@@ -2,6 +2,16 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+### 1.4.1 - 2026-11-05
+
+#### Changed
+
+- Added a normal 18-point minimum target for projected instructional text and code, with dense slides simplified or split instead of shrinking content.
+- Added explicit WCAG 2.2 AA local contrast targets and required non-color reinforcement for semantic mappings.
+- Prohibited underlining code for semantic emphasis because it can obscure underscores and increase visual clutter.
+- Added title-slide hero visuals as the default when established course decks use that convention.
+- Added corresponding generation and review checks.
+
 ### 1.4.0 - 2026-11-04
 
 #### Added
