@@ -2,6 +2,24 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+## 1.6.0 - 2026-11-09
+
+### Added
+- Added a pipeline integration standard defining authority boundaries, required assignment handoff, compatibility checks, evidence review, privacy, and cross-repository maintenance.
+- Added an accepted decision to keep TeachingAI and the C++ Assignment Grading Pipeline separate while connecting them through an explicit contract.
+
+### Changed
+- Made `STANDARDS/autograders/INDEX.md` the owner of the pipeline-integration loading trigger.
+- Corrected autograder guidance so assignment-specific native checks may be configured in supported detailed rubrics while shared evaluation semantics remain in `gio.py`.
+- Corrected aggregation guidance to use `run_pipeline.py` as the normal orchestrated path and treat `sum_results_by_name.py` as conditional rather than universally active.
+- Added pipeline-release compatibility checks to assignment and autograder generation and review.
+- Updated current-version declarations to 1.6.0.
+
+### Assumptions and TODOs
+- The Assignment Pipeline remains a separate repository and Matthew's normal C++ grading implementation.
+- The pipeline compatibility declaration initially uses Markdown; machine-readable compatibility metadata remains optional until automated checks are implemented.
+- Licensing for the separate software repository remains a future decision if it is publicly distributed.
+
 #### 1.5.0 - 2026-11-06
 
 ##### Added

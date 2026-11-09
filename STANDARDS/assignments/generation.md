@@ -29,6 +29,10 @@ Create assignments that produce meaningful practice, can be explained clearly, a
 - Starter packages should include per-function comments, a stdin-driven harness when appropriate, a subset of public tests, and local compile/run instructions.
 - Avoid accidental newline characters inside C++ string literals; use `\n` or `std::endl`.
 
+## Pipeline handoff
+
+When the assignment will use Matthew's Assignment Pipeline, load the pipeline integration standard through `STANDARDS/autograders/INDEX.md`. Define the student files, instructor files, cases, rubric weights, filename tolerance, output strictness, numeric tolerances, timeout, memory checks, source-review policy, D2L metadata, review checkpoint, recovery implications, and tested pipeline release before packaging. Do not infer current pipeline configuration from an old assignment.
+
 ## Autograding-aware design
 
 - Design independent tests to minimize cascading losses.

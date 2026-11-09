@@ -1,11 +1,14 @@
 # Autograder Review Checklist
 
 ## Workflow integrity
+- [ ] For Assignment Pipeline work, the tested pipeline release is identified.
+- [ ] Current pipeline documentation and supported configuration were checked rather than inferred from an old package or TeachingAI summary.
+- [ ] Any TeachingAI requirement unsupported by the selected release is reported as a compatibility gap rather than implemented through an unapproved parallel workflow.
 
 - [ ] Uses the established `run_pipeline`/rubric/`gio.py` workflow.
 - [ ] No parallel workaround was introduced without explicit request.
 - [ ] Rubric configuration contains only appropriate overall configuration.
-- [ ] Detailed grading behavior remains in the established grading component.
+- [ ] Shared check semantics remain in the established grading component; assignment-specific native checks appear only in supported detailed rubric configuration.
 - [ ] `cases/` owns stdin/expected data without improper duplication.
 - [ ] Required compiler and memory-check behavior are preserved.
 
@@ -51,6 +54,7 @@
 - [ ] Score totals and feedback agree.
 - [ ] Re-running is deterministic where expected.
 - [ ] All changed pipeline/package files are listed in the delivery report.
+- [ ] Shared pipeline files were changed only for a shared defect or explicitly approved capability, and every such change was separately identified.
 
 
 ## Correction and regression loop

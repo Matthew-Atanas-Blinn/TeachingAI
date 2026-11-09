@@ -1,4 +1,4 @@
-# TeachingAI Repository v1.4.1
+# TeachingAI Repository v1.6.0
 
 ## Purpose
 
@@ -92,4 +92,4 @@ Experiments live in `PROPOSED/` and are inactive by default. They may vary an es
 
 ## Current scope
 
-Version 1.5.0 adds the approved Programming Fundamentals III heaps and priority-queues module, course-wide integration rules, and decision-stub guidance for balanced trees and data-structure selection.
+Version 1.6.0 adds the formal integration contract between TeachingAI and the separate C++ Assignment Grading Pipeline, corrects stale autograder guidance, and preserves independent instructional-governance and software-release boundaries.

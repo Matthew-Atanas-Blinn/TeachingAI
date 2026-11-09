@@ -2,12 +2,14 @@
 
 ## Established workflow
 
-Use the existing pipeline. `gio.py` is the current C++ autograder; `run_pipeline` and rubric files coordinate assignment configuration. Continue using `sum_results_by_name.py` and `merge_grades_by_name.py` for aggregation and name-based gradebook merging. Diagnose and repair the established workflow rather than inventing a separate workaround unless Matthew explicitly requests one.
+Use the existing pipeline. `run_pipeline.py` is the normal orchestrated path, `gio.py` owns low-level C++ grading, and rubric files provide supported assignment configuration. The current orchestrator performs normal multipart consolidation. Use `sum_results_by_name.py` only when the selected pipeline release documents an applicable legacy or general aggregation workflow. Use the pipeline's supported D2L merge path for name-based gradebook merging. Diagnose and repair the established workflow rather than inventing a separate workaround unless Matthew explicitly requests one.
+
+For pipeline-dependent work, the selected Assignment Pipeline release and its current documentation govern operational details. Follow `assignment_pipeline_integration.md` and record the tested pipeline release.
 
 ## Configuration boundaries
 
 - Rubric configuration should contain overall assignment/pipeline configuration.
-- Detailed evaluation logic belongs in `gio.py` or the established grading component, not duplicated into rubric files.
+- Shared check semantics and evaluation algorithms belong in `gio.py` or the established grading component. Assignment-specific selection and configuration of supported checks, points, tolerances, and derivation rules may belong in a part-level or otherwise supported detailed rubric when generated checks are insufficient.
 - `stdin` and `expected` files remain in `cases/` and are not duplicated in rubric configuration.
 - Preserve `clang++` when memory checks require it.
 - Use relative paths in commands and documentation.

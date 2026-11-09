@@ -33,6 +33,12 @@
 - [ ] Expected outputs were independently verified.
 - [ ] Recovery grading is possible when automatic scoring is too low to reflect demonstrated understanding.
 
+## Pipeline compatibility
+- [ ] If the assignment uses Matthew's Assignment Pipeline, the exact tested release is recorded.
+- [ ] Configuration fields and commands are supported by that release.
+- [ ] The assignment-to-pipeline handoff is complete and unresolved compatibility gaps are reported.
+- [ ] Shared pipeline files were not changed for an assignment-specific need.
+
 ## Package preflight
 
 - [ ] All referenced files exist.

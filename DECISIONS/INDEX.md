@@ -10,6 +10,7 @@ Decision records preserve rationale for consequential accepted choices. Load a d
 - `cpp_namespace_convention.md`: cross-course namespace convention for instructional C++.
 - `semantic_visual_mapping.md`: cross-course semantic mapping across dark and light backgrounds.
 - `hierarchical_indexing.md`: repository-wide hierarchical navigation model.
+- `assignment_pipeline_relationship.md`: separation and integration contract between TeachingAI and the C++ Assignment Grading Pipeline.
 
 ## Creation guidance
 
