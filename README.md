@@ -140,7 +140,7 @@ See `REQUIRED/data_privacy.md`.
 TeachingAI is an evolving framework developed through practical use in
 college-level computer science instruction.
 
-Version 1.4.1 includes standards for:
+Version 1.5.0 includes standards for:
 
 - slide generation and review;
 - quiz generation and review;
@@ -151,7 +151,7 @@ Version 1.4.1 includes standards for:
 - student-data privacy; and
 - repository governance.
 
-Some course-specific files are preliminary. Module source-of-truth
+Programming Fundamentals III now includes an approved heaps and priority-queues module plus decision stubs for balanced trees and data-structure selection. Some course-specific files remain preliminary. Module source-of-truth
 documents will be added incrementally as individual units are redesigned.
 
 ## Repository Navigation

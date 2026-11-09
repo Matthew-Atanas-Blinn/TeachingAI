@@ -2,6 +2,23 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+#### 1.5.0 - 2026-11-06
+
+##### Added
+- Added the approved Programming Fundamentals III heaps and priority-queues module with source of truth, decisions, review checklist, and routing.
+- Added decision-stub branches for balanced trees and data-structure selection.
+
+##### Changed
+- Added Programming Fundamentals III rules for recurring invariant analysis, prompt STL connections, algorithm-pattern identification, balanced-tree context, selected student-authored testing, and culminating structure selection.
+- Established concise decision stubs as the default for approved decisions affecting undeveloped modules.
+- Registered the new Programming Fundamentals III branches and updated current-version declarations.
+- Clarified that existing Programming III materials may be revised during future substantial updates but do not require immediate retroactive revision.
+
+##### Assumptions and TODOs
+- The heaps and priority-queues module is ready to govern new slides and related artifacts.
+- Balanced-trees and structure-selection details remain intentionally incomplete and must be resolved before substantial module materials are generated.
+- Exact heap assignment, quiz length, heap-sort depth, and bottom-up heap-construction coverage remain undecided.
+
 ### 1.4.1 - 2026-11-05
 
 #### Changed

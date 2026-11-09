@@ -22,6 +22,7 @@ Turn useful discoveries into durable improvements without silently destabilizing
    - a universal requirement;
    - a course-wide rule;
    - a module source-of-truth change;
+  - a concise decision stub for an approved decision affecting an undeveloped module;
    - an accepted rationale record; or
    - an experiment.
 5. **Check existing authority.** Search for an existing rule before adding another. Prefer refining one authoritative rule over creating duplicates.

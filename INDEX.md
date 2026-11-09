@@ -92,4 +92,4 @@ Experiments live in `PROPOSED/` and are inactive by default. They may vary an es
 
 ## Current scope
 
-Version 1.4.0 adds an approved Programming Fundamentals I user-defined-functions module while retaining the hierarchical indexing, global standards, and prior module architecture.
+Version 1.5.0 adds the approved Programming Fundamentals III heaps and priority-queues module, course-wide integration rules, and decision-stub guidance for balanced trees and data-structure selection.
