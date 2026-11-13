@@ -1,33 +1,13 @@
-# Programming Fundamentals I Module Index
+## Programming Fundamentals I Module Index
 
-Read only the module or modules relevant to the current task. Do not infer that every Programming Fundamentals I topic already has an approved module folder already, it may need to be created.
+Read only the module or modules relevant to the current task. Do not infer that every course topic already has a complete approved module.
 
-## Available modules
+### Approved modules
+- functions/: user-defined functions, parameters, returns, scope, and testing.
+- enums_namespaces_aliases/: naming, scope, enums, namespaces, and type aliases.
+- arrays/: raw arrays, state, traversal, array parameters, simple processing, and introductory two-dimensional arrays.
 
-### `enums_namespaces_aliases/`
+For approved modules, read source_of_truth.md for dependent work, review_checklist.md for artifact generation/review, and decisions.md when reconsidering architecture.
 
-Use for work involving:
-
-- naming and scope;
-- out-of-scope, shadowed, and ambiguous names;
-- traditional enums and `enum class`;
-- namespaces and scope resolution;
-- using declarations and using directives; and
-- type aliases and `typedef` recognition.
-
-Read `source_of_truth.md` for dependent work. Read `decisions.md` when reconsidering module architecture. Read `review_checklist.md` when generating or reviewing a dependent artifact.
-
-
-#### functions/
-
-Use for work involving:
-- decomposition with user-defined functions;
-- declarations, definitions, and calls;
-- arguments and parameters;
-- value, reference, and const-reference parameters;
-- return values and `void` functions;
-- function scope, static locals, side effects, and global state;
-- function testing, drivers, and stubs;
-- overloading and default arguments.
-
-Read `source_of_truth.md` for dependent work, `review_checklist.md` when generating or reviewing an artifact, and `decisions.md` when reconsidering the module architecture.
+### Decision-stub module
+- strings/: approved placement after arrays and integration of introductory C-strings, but the full module and updated slides remain undeveloped.

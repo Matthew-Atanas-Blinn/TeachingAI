@@ -20,6 +20,6 @@ Use Foundation -> Tracing -> Application -> Integration -> Design/Diagnosis. Tra
 
 ## TODO
 
-- Document the approved course sequence.
+- Complete the course sequence in prog2_sequence.md.
 - Capture course-wide expectations for header/source separation and class design.
 - Add module source-of-truth documents as materials are redesigned.

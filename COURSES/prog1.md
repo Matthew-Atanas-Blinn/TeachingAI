@@ -1,6 +1,6 @@
 # Programming Fundamentals I (COSC 1436)
 
-Status: Preliminary course-level context. Expand as the course redesign stabilizes.
+Status: Preliminary course-level context with a partial approved sequence in prog1_sequence.md.
 
 ## Learner context
 

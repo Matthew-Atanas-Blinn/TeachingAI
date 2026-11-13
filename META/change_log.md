@@ -2,6 +2,25 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+### 1.7.0 - 2026-11-12
+
+#### Added
+- Added the approved Programming Fundamentals I arrays module with source of truth, decisions, review checklist, and routing.
+- Added per-course sequence files that separate dependency rationale from course context.
+- Added a Programming I strings decision stub that places introductory C-strings inside the later strings module.
+
+#### Changed
+- Registered the approved Programming I ending sequence: functions, enums/namespaces/aliases, arrays, then strings and C-strings.
+- Clarified raw-array parameter behavior relative to genuine reference parameters.
+- Strengthened the explicit-array connection for enum iteration.
+- Updated current-version declarations to 1.7.0.
+
+#### Assumptions and TODOs
+- Earlier Programming I ordering remains to be documented from approved materials.
+- Programming II and the full Programming III sequence remain intentionally incomplete.
+- Existing strings slides do not include C-strings and must be revised before the strings module is fully aligned.
+- Arrays assignment, quiz, parallel-array depth, and exact selection-sort implementation expectations remain unresolved.
+
 ## 1.6.0 - 2026-11-09
 
 ### Added

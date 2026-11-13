@@ -87,7 +87,8 @@ Defer namespace aliases, anonymous namespaces, inline namespaces, `using enum`, 
 - The arrays module will use an explicit array of enum values. The enum defines valid values; the array defines membership and traversal order.
 - Scope resolution reappears with class members in Programming Fundamentals II.
 - Type aliases become more useful with containers, iterators, templates, and complicated types.
-- Character arrays and C-strings follow raw array fundamentals.
+- The arrays module uses an explicit array of valid enum values: the enum defines the category, while the array defines membership and traversal order.
+- Character arrays and C-strings are governed by the later strings module after raw array fundamentals.
 
 ## Assessment guidance
 

@@ -165,7 +165,7 @@ Core parameter and call behavior should receive more weight than extension topic
 
 ### Future connections
 
-- Arrays passed to functions will complicate the copy-versus-alias model.
+- Raw arrays passed with int values[] do not use the genuine reference-parameter mechanism. The parameter is adjusted to a pointer parameter, giving access to caller-owned elements without copying the full array; the arrays module introduces this distinction at introductory depth.
 - Classes will allow related results to be returned together as one object.
 - Header/source separation will expand the declaration-versus-definition model.
 - Recursion will require tracing multiple active calls.

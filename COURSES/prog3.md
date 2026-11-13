@@ -27,6 +27,6 @@ Quizzes should progress from recognition and tracing through implementation cons
 
 ## TODO
 
-- Document the approved data-structure sequence.
+- Complete the data-structure sequence in prog3_sequence.md.
 - Add current decisions for vectors/sequence containers, stacks/queues, trees, graphs, hash tables, sorting, and related algorithms.
 - Add module source-of-truth documents as each unit is redesigned.

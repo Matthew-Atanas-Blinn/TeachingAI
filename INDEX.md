@@ -92,4 +92,4 @@ Experiments live in `PROPOSED/` and are inactive by default. They may vary an es
 
 ## Current scope
 
-Version 1.6.0 adds the formal integration contract between TeachingAI and the separate C++ Assignment Grading Pipeline, corrects stale autograder guidance, and preserves independent instructional-governance and software-release boundaries.
+Version 1.7.0 adds the approved Programming I arrays module, per-course sequence files, and a strings/C-strings decision stub that records the current slide-alignment gap.
