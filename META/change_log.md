@@ -2,6 +2,18 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+#### 1.7.1 - 2026-11-13
+
+##### Changed
+- Added a Fall 2026 strings-assessment exception limiting the current module quiz to the `std::string` content actually taught.
+- Deferred introductory C-string assessment to the Fall 2026 final only after explicit instruction and reasonable practice.
+- Required an AI to ask Matthew before the next strings offering to discard the temporary note and update the module materials rather than silently carrying the exception forward.
+
+##### Assumptions and TODOs
+- The current Fall 2026 strings slides remain the assessment boundary for the module quiz.
+- C-string final-exam coverage remains conditional on instruction and practice before the final.
+- The complete strings and C-strings module source of truth, review checklist, slide revision, and future aligned quiz remain undeveloped.
+
 ### 1.7.0 - 2026-11-12
 
 #### Added
