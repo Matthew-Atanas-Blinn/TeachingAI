@@ -16,10 +16,23 @@ Recovery may raise but never lower the automatic score.
 
 Perform recovery review only when the automatic score is low enough to justify the time or when a known grader limitation may have caused broad loss. Do not manually regrade every successful submission by default.
 
+## Assignment-relevance gate
+
+Before assigning recovery points, verify that the submitted files and code belong to the assignment currently being graded.
+
+- Identify the current assignment's required files, interfaces, behaviors, and rubric.
+- Inspect the submission for evidence addressing those requirements.
+- Grade only evidence relevant to the current assignment.
+- Do not award credit for meaningful or correct work that belongs to a different assignment.
+- If the student clearly submitted work for another assignment, report the mismatch explicitly and apply the established near-zero wrong-assignment score, typically 1/100, unless the assignment or course policy specifies another result.
+- Do not reinterpret the submitted file as though the unrelated assignment were the active grading task.
+- If assignment identity is genuinely ambiguous because required materials are unavailable, stop and obtain the missing assignment specification before grading.
+
 ## Required evidence and reporting
 
 For every reviewed student, state:
 
+- confirmation that the evaluated files and code belong to the current assignment and provide evidence for its objectives;
 - the rubric used;
 - points available, earned, and deducted in every category;
 - the exact reason for every deduction;

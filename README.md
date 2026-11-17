@@ -140,13 +140,13 @@ See `REQUIRED/data_privacy.md`.
 TeachingAI is an evolving framework developed through practical use in
 college-level computer science instruction.
 
-Version 1.7.1 includes standards for:
+Version 1.7.2 includes standards for:
 
 - slide generation and review;
 - quiz generation and review;
 - assignment design and review;
 - autograder development and validation;
-- recovery grading;
+- recovery grading, including assignment-relevance verification;
 - accessibility;
 - student-data privacy; and
 - repository governance.

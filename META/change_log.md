@@ -2,6 +2,21 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+### 1.7.2 - 2026-11-13
+
+#### Changed
+- Added an assignment-relevance gate to recovery grading.
+- Required manual reviewers to verify that submitted files and code belong to the active assignment before awarding rubric credit.
+- Established that clearly wrong-assignment work receives the existing near-zero recovery treatment, typically 1/100, unless a more specific rule controls.
+- Updated current-version declarations to 1.7.2.
+
+#### Corrected
+- Prevented technically meaningful work from another assignment from receiving credit under the wrong assignment's manual recovery review.
+
+#### Assumptions
+- Assignment-specific, course, or institutional rules may override the typical 1/100 wrong-assignment recovery score.
+- Student-specific incidents, names, submissions, and grades remain outside TeachingAI.
+
 #### 1.7.1 - 2026-11-13
 
 ##### Changed

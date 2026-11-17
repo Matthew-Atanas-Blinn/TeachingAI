@@ -1,4 +1,4 @@
-# TeachingAI Repository v1.6.0
+# TeachingAI Repository v1.7.2
 
 ## Purpose
 
@@ -92,4 +92,4 @@ Experiments live in `PROPOSED/` and are inactive by default. They may vary an es
 
 ## Current scope
 
-Version 1.7.1 adds the Fall 2026 strings-assessment exception and its required next-offering cleanup prompt while retaining the approved long-term strings/C-strings sequence.
+Version 1.7.2 adds an assignment-relevance gate to recovery grading so manual review credits only evidence for the active assignment and treats clearly wrong-assignment submissions as near-zero work.
