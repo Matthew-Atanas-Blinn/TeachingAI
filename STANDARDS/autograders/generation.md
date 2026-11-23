@@ -14,6 +14,18 @@ For pipeline-dependent work, the selected Assignment Pipeline release and its cu
 - Preserve `clang++` when memory checks require it.
 - Use relative paths in commands and documentation.
 
+### Student-observable output formatting
+- Do not deduct for output-format distinctions that students could not reasonably perceive or infer from the assignment materials.
+- By default, ignore trailing horizontal whitespace, whitespace on otherwise empty lines, platform line endings, trailing blank lines, and the presence or absence of a final newline.
+- Grade invisible whitespace exactly only when the distinction is visibly represented, explicitly defined, instructionally relevant, and demonstrated in student-facing material.
+- Ordinary exact-output credit must use the selected pipeline release's student-visible canonical comparison. Raw-output matching requires a documented justification.
+
+### Execution reliability
+- A single timeout is not sufficient evidence for a deduction when the selected pipeline supports timeout confirmation.
+- Require the timeout to be reproduced by the pipeline's retry behavior before it affects the score.
+- A recovered timeout is diagnostic evidence, not a grading failure.
+- Timeout status, captured output, failed-case status, and score must be internally consistent. Contradictory evidence requires review rather than a silent deduction.
+
 ## Test design
 
 - Map every test to an objective and rubric value.
@@ -55,7 +67,15 @@ Before release, test at least:
 - a runtime-error or timeout case when relevant;
 - a near-empty/starter-only submission;
 - filename variations the assignment intends to tolerate;
-- extra-output behavior when strict output matters.
+- extra-output behavior when strict output matters;
+- a correct trailing-whitespace and line-ending variant;
+- a correct final-newline variant;
+- a correct alternate-control-flow implementation;
+- transient-timeout recovery when supported by the selected pipeline;
+- a confirmed timeout or infinite-loop submission; and
+- a visibly wrong output that must remain distinguishable after canonicalization.
+
+Use only synthetic names and identifiers in reusable validation fixtures. Do not derive fixture labels from real students or incidents.
 
 ## Change reporting
 

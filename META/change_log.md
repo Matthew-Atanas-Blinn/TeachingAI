@@ -2,6 +2,24 @@
 
 All notable approved repository changes are recorded here. Detailed per-file reports accompany each delivery.
 
+#### 1.8.0 - 2026-11-23
+
+##### Added
+- Added a student-observable output-formatting rule for autograders.
+- Added confirmed-timeout evidence requirements and execution-consistency review checks.
+- Added required regression variants for invisible whitespace, alternate valid control flow, transient timeout recovery, confirmed timeout, and visibly wrong output.
+- Required reusable autograder fixtures to use only synthetic names and identifiers and prohibited labels derived from real student incidents.
+
+##### Changed
+- Required ordinary exact-output grading to use the selected pipeline release's canonical student-visible comparison.
+- Required unresolved timeout/output contradictions to stop automatic import and receive human review.
+- Updated current-version declarations to 1.8.0.
+
+##### Assumptions
+- The selected Assignment Pipeline release implements the retry and canonicalization behaviors described by its compatibility declaration.
+- Stricter whitespace grading remains possible only when it is visible, explicit, instructionally relevant, and student-facing.
+- No real student information is stored in TeachingAI.
+
 ### 1.7.2 - 2026-11-13
 
 #### Changed

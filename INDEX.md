@@ -1,4 +1,4 @@
-# TeachingAI Repository v1.7.2
+## TeachingAI Repository v1.8.0
 
 ## Purpose
 
@@ -92,4 +92,4 @@ Experiments live in `PROPOSED/` and are inactive by default. They may vary an es
 
 ## Current scope
 
-Version 1.7.2 adds an assignment-relevance gate to recovery grading so manual review credits only evidence for the active assignment and treats clearly wrong-assignment submissions as near-zero work.
+Version 1.8.0 adds student-observable output-format fairness, confirmed-timeout evidence requirements, expanded autograder regression checks, and synthetic-only reusable fixture rules.

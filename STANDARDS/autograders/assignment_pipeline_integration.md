@@ -73,9 +73,18 @@ Pipeline use does not replace human review. Before D2L import:
 
 A successful pipeline run is not proof that grades are correct.
 
+### Student-visible output contract
+Pipeline-dependent assignments must use the selected pipeline release's canonical student-visible output comparison unless stricter formatting is explicitly observable, instructionally relevant, and documented in the student contract. Invisible trailing whitespace, whitespace-only lines, platform line endings, trailing blank lines, and final-newline differences must not reduce a score by default.
+
+### Timeout evidence contract
+A timeout may affect a grade only when confirmed according to the selected pipeline release's supported retry and evidence behavior. A recovered timeout is diagnostic only. An unresolved contradiction among timeout status, captured output, failed-case status, and score must stop automatic import and require review.
+
+
 ## Privacy boundary
 
 Do not commit student submissions, names, identifiers, grade exports, result files, feedback tied to real students, or other education records to TeachingAI or a public Assignment Pipeline repository. Real student data belongs only in the institutionally approved grading workspace.
+
+Reusable regression fixtures must use only synthetic names and identifiers. Fixture labels must not be derived from real student names, submissions, grades, or incidents.
 
 ## Cross-repository maintenance
 

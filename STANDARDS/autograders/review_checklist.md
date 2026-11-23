@@ -12,6 +12,23 @@
 - [ ] `cases/` owns stdin/expected data without improper duplication.
 - [ ] Required compiler and memory-check behavior are preserved.
 
+### Student-observable output
+-  Invisible trailing whitespace, whitespace-only lines, platform line endings, trailing blank lines, and final-newline differences do not reduce scores.
+-  Ordinary exact-output grading uses student-visible canonical comparison.
+-  Any raw-output or invisible-whitespace-sensitive rule has an explicit, visible, instructionally relevant justification in student-facing material.
+-  A visibly wrong outcome, missing line, or extra visible output remains distinguishable after canonicalization.
+
+### Timeout evidence integrity
+-  Every grade-affecting timeout is confirmed according to the selected pipeline release's retry behavior.
+-  A recovered transient timeout does not reduce the score.
+-  Timeout notes, captured output, failed cases, and scores agree.
+-  Attempt-level evidence is preserved for retried timeouts when the selected pipeline provides it.
+-  An unresolved execution contradiction blocks automatic import and receives human review.
+
+### Reusable-fixture privacy
+-  Regression fixtures use only synthetic names and identifiers.
+-  Fixture labels are not derived from real students, submissions, grades, or incidents.
+
 ## Coverage and independence
 
 - [ ] Every objective maps to one or more tests.
